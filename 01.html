@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var age=prompt("请输入您的年龄");
+        if(age>=18){
+            alert('请进');
+        }else{
+            alert('未满十八岁，不允许进入网吧');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //根据位置返回字符 charAt(index)
+        var arr="oabcoefoxyozzopp";
+        //返回字符串位置indexOf(字符 '',从哪个位置开始 0/1/2/3/8)
+        var index = arr.indexOf('o',0);
+        var n =0;
+        while(index !== -1){
+            console.log(index);
+            index = arr.indexOf('o',1+index);
+            n+=1;
+        }
+        /*
+        判断对象里是否含有某个属性   对象名['属性名'] 
+        var a = {
+            age:18;
+            name:like
+        }
+        if(a['age']){
+            console.log('里面有该属性');
+        }else{
+            console.log('没有该属性');
+        }
+        */
+      
+        console.log("出现的次数有"+n);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
